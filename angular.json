@@ -5,7 +5,10 @@
   "projects": {
     "angularTeach": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "style": "scss",
+        "skipTests": true
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

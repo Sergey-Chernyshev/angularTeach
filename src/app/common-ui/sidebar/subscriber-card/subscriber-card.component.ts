@@ -8,6 +8,8 @@ import {Profile} from "../../../data/interfaces/profile.interface";
   templateUrl: './subscriber-card.component.html',
   styleUrl: './subscriber-card.component.css'
 })
+
 export class SubscriberCardComponent {
   @Input() profile!: Profile
 }
+

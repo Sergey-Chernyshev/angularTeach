@@ -1,16 +1,16 @@
-:host{
+:host {
   display: block;
   padding: 20px 12px;
   background: var(--dark-color);
 }
 
-.main-menu-list{
+.main-menu-list {
   display: grid;
   grid-gap: 8px;
   list-style: none;
 }
 
-.menu-item{
+.menu-item {
   position: relative;
   padding: 16px 12px;
   border: none;
@@ -31,35 +31,74 @@
   align-content: center;
 
   &:hover,
-  &:focus-visible{
+  &:focus-visible {
     background: var(--dark-hover-color);
     color: var(--primary-color);
 
-    .menu-item svg{
+    .menu-item svg {
       color: var(--primary-color);
     }
   }
 }
 
 
-.menu-item svg{
+.menu-item svg {
   height: 100%;
   width: 100%;
   transform: translateY(20%);
 }
 
-.to-subscribers{
+.to-subscribers {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.to-subscribers-link{
+.to-subscribers-link {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-.to-subscribers-icon{
+.to-subscribers-icon {
   width: 18px;
   height: 18px;
+}
+
+.sidebar__footer {
+  position: absolute;
+  bottom: 20px;
+  background-color: var(--dark-hover-color);
+  display: grid;
+  padding: 4px 16px;
+  border-radius: 2px;
+  grid-template-columns: 32px 1fr 16px;
+  grid-gap: 12px;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .username-text{
+    font-weight: 800;
+    color: var(--primary-color);
+  }
+}
+
+.setting-btn{
+  svg{
+    width: 13px;
+    height: 13px;
+    color: var(--grey-color);
+  }
+}
+
+.img__placeholder{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
 }

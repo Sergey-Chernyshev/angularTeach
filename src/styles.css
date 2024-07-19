@@ -1,27 +1,31 @@
 @import url("fonts.css");
 @import url("margins.css");
-:root{
+
+:root {
   --dark-color: #000000;
   --light-color: #FFFFFF;
+  --light-transparent-color: rgba(255, 255, 255, 0.75);
   --primary-color: #AE7AFF;
   --grey-color: #5F646D;
   --dark-hover-color: #161616
+
 }
 
 *,
 *:before,
-*:after{
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-a{
+
+a {
   border: none;
   text-decoration: none;
 }
 
 
-body{
+body {
   background-image: url(/assets/imgs/background.png);
   color: var(--light-color);
   font-family: 'Roboto', sans-serif;
@@ -31,7 +35,7 @@ body{
   /*font-family: 'JetBrains Mono';*/
 }
 
-.profile-card__tags{
+.profile-card__tags {
   display: flex;
   flex-direction: row;
   column-gap: 3px;
@@ -41,7 +45,7 @@ body{
   height: min-content;
 }
 
-.skill-tag{
+.skill-tag {
   height: 24px;
   padding: 4px 8px;
   border-radius: 4px;
@@ -55,7 +59,7 @@ body{
 }
 
 
-.btn{
+.btn {
   border: none;
   background: var(--primary-color);
   color: var(--dark-color);
@@ -67,11 +71,11 @@ body{
   width: 100%;
 }
 
-.btn-shadow{
+.btn-shadow {
   border: 1px solid var(--dark-color);
   position: relative;
 
-  &:before{
+  &:before {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -85,35 +89,34 @@ body{
 }
 
 
-
-.h1{
+.h1 {
   font-size: 48px;
   line-height: 56px;
   font-weight: 800;
 }
 
-.h4{
+.h4 {
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
   line-height: 32px;
 }
 
-.regular{
+.regular {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
 
-.tt-control-label{
+.tt-control-label {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   display: block;
 }
 
-.tt-input{
+.tt-input {
   width: 100%;
   margin-top: 8px;
   display: block;
@@ -130,8 +133,37 @@ body{
 }
 
 
+.tt-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.tt-form-label-text{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--light-transparent-color);
+}
 
+.tt-form-input {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  background: none;
+  color: var(--light-color);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--light-color);
+  height: 33px;
+}
+
+.tt-textarea{
+  height: 84px;
+  resize: none;
+}
 
 
 
